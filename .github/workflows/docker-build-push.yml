@@ -83,6 +83,7 @@ jobs:
 
       # 7. Build & push SERVER image
       - name: Build and push SERVER image
+        id: build-server
         uses: docker/build-push-action@v5
         with:
           context: ./fish-speech          # cloned repo is the build context
